@@ -1,0 +1,40 @@
+ <div class="container">
+   <div class="card">
+   <div class="card-header">
+    <h3>Estudiante</h3>
+   </div>
+   <div class="card-body">
+      <table class="table table-striped">
+         <thead>
+            <tr>
+               <th>ID</th>
+               <th>Salon</th>
+               <th>dia</th>
+               <th>horaInicial</th>
+               <th>HoraFinal</th>
+           
+             </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let horario of horarios" class="text-center">
+            <td>{{horario.idHorario}}</td>
+            <td>{{horario['salon'].descripcion}}</td>
+            <td>{{horario.dia}}</td>
+           
+            <td>
+               <button  class="btn btn-warning"  > Editar
+               </button>
+           </td>
+           <td>
+            <button  class="btn btn-danger" style="margin-left: -43px;">
+               Eliminar</button>
+              </td>
+            
+         </tr>
+        </tbody>
+
+      </table>
+   </div>
+   </div>
+
+</div>

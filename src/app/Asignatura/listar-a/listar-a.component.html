@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="card">
+    <div class="card-header">
+     <h3>Estudiante</h3>
+    </div>
+    <div class="card-body">
+       <table class="table table-hover">
+          <thead>
+             <tr>
+                 <th>Id</th>
+                 <th>Docente</th>
+                 <th>codigo</th>
+                 <th>creditos</th>
+                 <th>descripcion</th>
+                 <th>nombre</th>
+                 <th>prerequisito</th>
+               
+             </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let asignatura of asignaturas" class="text-center">
+               <td>{{asignatura.idAsignatura}}</td>
+               <td>{{asignatura['docente'].nombre}}</td>
+               <td>{{asignatura.codigo}}</td>
+               <td>{{asignatura.creditos}}</td>
+               <td>{{asignatura.descripcion}}</td>
+               <td>{{asignatura.nombre}}</td>
+               <td>{{asignatura.pre_requisito}}</td>
+
+
+               
+               <td>
+                  <button  class="btn btn-warning"  > Editar
+                  </button>
+              </td>
+              <td>
+               <button  class="btn btn-danger" style="margin-left: -43px;">
+                  Eliminar</button>
+                 </td>
+               
+            </tr>
+           </tbody>
+       </table>
+    </div>
+    </div>
+ 
+ </div>

@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="card">
+    <div class="card-header">
+     <h3>Docentes</h3>
+    </div>
+    <div class="card-body">
+       <table class="table table-striped">
+          <thead class="table-dark">
+             <tr>
+                 <th>Id</th>
+                 <th>Nombre</th>
+                 <th>Apellido</th>
+                 <th>T.I</th>
+                 <th>N/Identificacion</th>
+                 <th>Correo</th>
+                 <th>Telefono</th>
+               
+             </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let docente of docentes" class="text-center">
+               <td>{{docente.idDocente}}</td>
+               <td>{{docente.nombre}}</td>
+               <td>{{docente.apellido}}</td>
+               <td>{{docente.tipoIdentificacion}}</td>
+               <td>{{docente.numIdentificacion}}</td>
+               <td>{{docente.correoElectronico}}</td>
+               <td>{{docente.telefono}}</td>
+               <td>
+                  <button  class="btn btn-warning"  > Editar
+
+             
+                  </button>
+
+      
+                 
+                 
+              </td>
+              <td>
+               
+               <button  class="btn btn-danger" style="margin-left: -43px;">
+                  Eliminar</button>
+
+              </td>
+
+               
+            
+          </tr>
+         </tbody>
+ 
+       </table>
+    </div>
+    </div>
+ 
+ </div>
